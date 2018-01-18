@@ -5,7 +5,7 @@ import sort.util.ArrayUtil;
 /**
  * Created by Zlatan on 18/1/18.
  */
-public class BubbleSort implements Sort {
+public class InsertionSort implements Sort {
 
     @Override
     public void sortInt(int[] array) {
@@ -17,16 +17,14 @@ public class BubbleSort implements Sort {
             return;
         }
 
-        for (int end = array.length - 1; end >= 0; end--) {
-            for (int i = 0; i < end; i++) {
-                if (array[i] > array[i+1]) {
-                    ArrayUtil.swap(array, i, i + 1);
-                }
+        for (int i = 1; i < array.length; i++) {
+            for (int j = i - 1; j >= 0 && array[j] > array[j + 1]; j--) {
+                ArrayUtil.swap(array, j, j + 1);
             }
         }
     }
 
     public static void main(String[] args) throws Exception {
-        ArrayUtil.testSort(BubbleSort.class);
+        ArrayUtil.testSort(InsertionSort.class);
     }
 }
