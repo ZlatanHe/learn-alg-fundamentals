@@ -6,7 +6,8 @@ import sort.util.ArrayUtil;
  * 冒泡排序，初始指针位在最后一位
  *  每次都对指针位左部子数组做冒泡排序，即看到左边数比右边大就交换，直到指针位为止
  *  递减指针位直至最左，完成排序
- *
+ * 时间复杂度O(N)
+ * 空间复杂O(1)
  * Created by Zlatan on 18/1/18.
  */
 public class BubbleSort implements Sort {
