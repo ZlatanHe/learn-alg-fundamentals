@@ -7,7 +7,7 @@ import sort.util.ArrayUtil;
  * 初始指针位是最左位
  *  从指针位向右遍历直到数组末尾，寻找最小数字，与指针位交换位置
  *  指针位向右直到数组末尾，排序结束
- *  时间复杂度O(N)
+ *  时间复杂度O(N^2)
  *  空间复杂O(1)
  * Created by Zlatan on 18/1/18.
  */
@@ -15,22 +15,18 @@ public class SelectionSort implements Sort{
 
     @Override
     public void sortInt(int[] array) {
-        if (array == null) {
-            throw new IllegalArgumentException();
-        }
-
-        if (array.length == 1) {
-            return;
-        }
-
+        validate(array);
         for (int i = 0; i < array.length - 1; i++) {
-            int indexOfMin = i;
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[j] < array[indexOfMin]) {
-                    indexOfMin = j;
+            // i 为待排部分的开始
+            int min = Integer.MAX_VALUE;
+            int minIndex = i;
+            for (int j = i; j < array.length; j++) {
+                if (array[j] < min) {
+                    min = array[j];
+                    minIndex = j;
                 }
             }
-            ArrayUtil.swap(array, i, indexOfMin);
+            ArrayUtil.swap(array, i, minIndex);
         }
     }
 

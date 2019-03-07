@@ -65,8 +65,8 @@ public class ArrayUtil {
     }
 
     public static void testSort(Class<? extends Sort> clazz) throws Exception {
-        int size = 10;
-        int maxValue = 100;
+        int size = new Random().nextInt(10000);
+        int maxValue = Integer.MAX_VALUE;
 
         int[] array1 = generateRandomArray(size, maxValue);
         int[] array2 = Arrays.copyOf(array1, array1.length);
