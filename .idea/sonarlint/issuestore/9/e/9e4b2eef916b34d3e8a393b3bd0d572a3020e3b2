@@ -1,0 +1,8 @@
+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¥şÔ¾üÿÿÿÿ8ßÿË,
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(Ñ–Â£8¢š×Ë,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(åö¡½úÿÿÿÿ8óú÷Ë,
+Zsquid:UselessImportCheck",Remove this unused import 'sort.BubbleSort'.(–›èàıÿÿÿÿ8öÈ€Ì,
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(‚ŒìÕ8øü€Ì,
