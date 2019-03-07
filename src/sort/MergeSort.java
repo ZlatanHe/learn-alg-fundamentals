@@ -2,6 +2,8 @@ package sort;
 
 import sort.util.ArrayUtil;
 
+import java.util.Arrays;
+
 /**
  * Created by Zlatan on 18/1/18.
  */
@@ -9,43 +11,36 @@ public class MergeSort implements Sort {
 
     @Override
     public void sortInt(int[] array) {
-        if (array == null) {
-            throw new IllegalArgumentException();
+        validate(array);
+        int[] newArr = mergeSort(array, 0, array.length);
+        for (int i = 0 ; i < array.length; i++) {
+            array[i] = newArr[i];
         }
-
-        if (array.length == 1) {
-            return;
-        }
-
-        mergeSortProcess(array, 0, array.length - 1);
     }
 
-    private void mergeSortProcess(int[] array, int left, int right) {
-        if (left == right) {
-            return;
+    private int[] mergeSort(int[] array, int start, int end) {
+        int length = end - start;
+        if (length == 1) {
+            return Arrays.copyOfRange(array, start, end);
         }
-
-        int mid = (left + right) >> 1;
-        mergeSortProcess(array, left, mid);
-        mergeSortProcess(array, mid + 1, right);
-        merge(array, left, mid, right);
-    }
-
-    private void merge(int[] array, int left, int mid, int right) {
-        int[] result = new int[right - left + 1];
-        int l = left, r = mid + 1, i = 0;
-        while (l <= mid && r <= right) {
-            result[i++] = array[l] < array[r] ? array[l++] : array[r++];
+        int mid = length / 2 + start;
+        int[] left = mergeSort(array, start, mid);
+        int[] right = mergeSort(array, mid, end);
+        int[] res = new int[length];
+        int leftIdx = 0;
+        int rightIdx = 0;
+        for (int i = 0; i < length; i++) {
+            int leftVal = leftIdx < left.length ? left[leftIdx] : Integer.MAX_VALUE;
+            int rightVal = rightIdx < right.length ? right[rightIdx] : Integer.MAX_VALUE;
+            if (leftVal < rightVal) {
+                res[i] = leftVal;
+                leftIdx++;
+            } else {
+                res[i] = rightVal;
+                rightIdx++;
+            }
         }
-        while (l <= mid) {
-            result[i++] = array[l++];
-        }
-        while (r <= right) {
-            result[i++] = array[r++];
-        }
-        for (int j = left; j <= right; j++) {
-            array[j] = result[j-left];
-        }
+        return res;
     }
 
     public static void main(String[] args) throws Exception {

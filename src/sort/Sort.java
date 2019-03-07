@@ -7,9 +7,11 @@ package sort;
  * 简单选择排序		O(N^2)				O(N^2)			O(N^2)			O(1)	 Y
  * 冒泡排序			O(N^2)				O(N^2)			O(N)			O(1)	 Y
  * 堆排序
- * 快速排序
+ * 快速排序          O(NlogN)			    O(N^2)			O(NlogN)        O(1)     N
  * 归并排序			O(NlogN)			O(NlogN)		O(NlogN)		O(N)	 Y
- * 计数排序			O(NlogN)			O(N^2)			O(NlogN)        O(1)     N
+ * 计数排序
+ * 基数排序
+ * 外排序
  *
  * Created by Zlatan on 18/1/18.
  */
