@@ -1,6 +1,5 @@
-package sort.util;
+package util;
 
-import sort.BubbleSort;
 import sort.Sort;
 
 import java.util.Arrays;
@@ -81,5 +80,31 @@ public class ArrayUtil {
         System.out.println(isCorrect ? "Correct" : "Fault");
         printArray(array3);
         printArray(array2);
+    }
+
+    public static void printArr(Object... arr) {
+        if (arr == null) {
+            throw new NullPointerException();
+        }
+        StringBuilder sb = new StringBuilder("[");
+        for (Object object : arr) {
+            sb.append(object).append(" ");
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        sb.append("]");
+        System.out.println(sb);
+    }
+
+    public static void printArr(int[] arr) {
+        if (arr == null) {
+            throw new NullPointerException();
+        }
+        StringBuilder sb = new StringBuilder("[");
+        for (Object object : arr) {
+            sb.append(object).append(" ");
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        sb.append("]");
+        System.out.println(sb);
     }
 }

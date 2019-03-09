@@ -1,6 +1,6 @@
 package sort;
 
-import sort.util.ArrayUtil;
+import util.ArrayUtil;
 
 import java.util.Arrays;
 

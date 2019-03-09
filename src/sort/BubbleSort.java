@@ -1,6 +1,6 @@
 package sort;
 
-import sort.util.ArrayUtil;
+import util.ArrayUtil;
 
 /**
  * 冒泡排序，初始指针位在最后一位

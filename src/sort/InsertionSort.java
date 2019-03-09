@@ -1,6 +1,6 @@
 package sort;
 
-import sort.util.ArrayUtil;
+import util.ArrayUtil;
 
 /**
  * 插入排序，将数组分为已排部分和未排部分，初始已排部分为最左位，指针位即未排部分的最左位

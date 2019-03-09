@@ -1,6 +1,6 @@
 package sort;
 
-import sort.util.ArrayUtil;
+import util.ArrayUtil;
 
 /**
  * 选择排序，与插入排序一样的分成已排部分和未排部分，不同的是已排部分中间不会被插入数据

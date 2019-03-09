@@ -3,6 +3,8 @@ package others;
 import java.util.Stack;
 
 /**
+ * 域名反转
+ *
  * Created by Zlatan on 19/3/7.
  */
 public class HostReverse {

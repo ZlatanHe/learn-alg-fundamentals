@@ -3,6 +3,10 @@ package others;
 import java.util.Stack;
 
 /**
+ * 任意给一棵二叉树和其中一个节点的值,
+ * 求这个节点的搜索路径
+ * 时间复杂度O(N)
+ *
  * Created by Zlatan on 19/3/7.
  */
 public class TreeNodePath {
