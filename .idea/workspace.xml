@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99080797-325b-4ed2-8e51-f5a1cc1f1695" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/array/ArrayRotation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/string/LongestNoRepeatSubString.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/util/ArrayUtil.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sort/util/ArrayUtil.java" afterPath="$PROJECT_DIR$/src/util/ArrayUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/others/HostReverse.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/others/HostReverse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/others/TreeNodePath$Node.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/others/TreeNodePath$Node.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/others/TreeNodePath.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/others/TreeNodePath.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/BubbleSort.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/BubbleSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/HeapSort.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/HeapSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/InsertionSort.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/InsertionSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/MergeSort.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/MergeSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/QuickSort.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/QuickSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/SelectionSort.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/SelectionSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/ShellSort.class" afterPath="$PROJECT_DIR$/out/production/learn-alg-fundamentals/sort/ShellSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/others/HostReverse.java" afterPath="$PROJECT_DIR$/src/others/HostReverse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/others/TreeNodePath.java" afterPath="$PROJECT_DIR$/src/others/TreeNodePath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/BubbleSort.java" afterPath="$PROJECT_DIR$/src/sort/BubbleSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/HeapSort.java" afterPath="$PROJECT_DIR$/src/sort/HeapSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/InsertionSort.java" afterPath="$PROJECT_DIR$/src/sort/InsertionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/MergeSort.java" afterPath="$PROJECT_DIR$/src/sort/MergeSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/QuickSort.java" afterPath="$PROJECT_DIR$/src/sort/QuickSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/SelectionSort.java" afterPath="$PROJECT_DIR$/src/sort/SelectionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/ShellSort.java" afterPath="$PROJECT_DIR$/src/sort/ShellSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/string/LongestNoRepeatSubString.java" afterPath="$PROJECT_DIR$/src/string/LongestNoRepeatSubString.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/string/LongestNoRepeatSubString.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="565">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <caret line="71" column="22" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -882,7 +858,7 @@
     <entry file="file://$PROJECT_DIR$/src/string/LongestNoRepeatSubString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="565">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <caret line="71" column="22" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
           <folding />
         </state>
       </provider>

@@ -62,9 +62,7 @@ public class LongestNoRepeatSubString {
                 currentLen = i - currentSubStringBegin + 1;
             } else {
                 currentLen++;
-            }
-            if (currentLen > maxLen) {
-                maxLen = currentLen;
+                maxLen = Math.max(currentLen, maxLen);
             }
             lastIndex[c] = i;
         }
