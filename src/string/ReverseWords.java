@@ -8,7 +8,36 @@ import java.util.Stack;
 public class ReverseWords {
 
     public String reverse(String s) {
-        Stack<String> stack = new Stack<>();
+        return solution2(s);
+    }
+
+    private String solution2(String s) {
+        if (s == null || s.equals("")) {
+            return s;
+        }
+        String[] strings = s.split(" ");
+        boolean wordStart = false;
+        StringBuilder sb = new StringBuilder();
+        for (int i = strings.length - 1; i >= 0; i--) {
+            if (!wordStart) {
+                if (strings[i].equals("")) {
+                    continue;
+                }
+                wordStart = true;
+            }
+            if (strings[i].equals("")) {
+                continue;
+            }
+            sb.append(strings[i]).append(" ");
+        }
+        if (wordStart) {
+            sb.deleteCharAt(sb.length() - 1);
+        }
+        return sb.toString();
+    }
+
+    private String solution1(String s) {
+
         char[] chars = s.toCharArray();
 
         StringBuilder sb = new StringBuilder();
@@ -16,6 +45,7 @@ public class ReverseWords {
         boolean inBlank = false;
         boolean startWords = false;
 
+        Stack<Character> stack = new Stack<>();
         for (int i = chars.length - 1; i >= 0; i--) {
             char ch = chars[i];
 
@@ -25,30 +55,31 @@ public class ReverseWords {
             if (!startWords) {
                 continue;
             }
-
             if (inBlank) {
                 if (ch != ' ') {
-                    stack.add(" ");
-                    sb = new StringBuilder().append(ch);
+                    sb.append(" ");
+                    stack.add(ch);
                     inBlank = false;
                 }
                 continue;
             }
 
             if (ch == ' ') {
-                stack.add(sb.toString());
-                sb = new StringBuilder();
+                while (!stack.isEmpty()) {
+                    sb.append(stack.pop());
+                }
                 inBlank = true;
                 continue;
             }
 
-            sb.append(chars[i]);
+            stack.add(ch);
         }
-        if (!inBlank) {
-            stack.add(sb.toString());
+        while (!stack.isEmpty()) {
+            sb.append(stack.pop());
         }
 
         return sb.toString();
+
     }
 
     public static void main(String[] args) {
