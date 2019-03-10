@@ -37,6 +37,9 @@ class CheckInclusion {
     }
 
     public static void main(String[] args) {
-        System.out.print(checkInclusion("ab", "ndmba"));
+//        System.out.print(checkInclusion("ab", "ndmba"));
+        int[][] n = new int[2][10];
+        System.out.println(n.length);
+        System.out.println(n[0].length);
     }
 }

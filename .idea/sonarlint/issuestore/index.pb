@@ -1,8 +1,6 @@
 
 B
 src/sort/Sort.java,8/6/86cb4f31aa9c68deda38c5cc3cc5737c54194c3e
-L
-src/sort/util/ArrayUtil.java,9/e/9e4b2eef916b34d3e8a393b3bd0d572a3020e3b2
 K
 src/sort/SelectionSort.java,5/0/5009296a7145c0c4a4443502f4807d945ac6be0b
 H
